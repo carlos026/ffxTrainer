@@ -1,0 +1,36 @@
+C:\Users\CarlosJr\AppData\Local\Temporary Projects\WindowsFormsApplication11\bin\Release\WindowsFormsApplication11.exe
+C:\Users\CarlosJr\AppData\Local\Temporary Projects\WindowsFormsApplication11\bin\Release\WindowsFormsApplication11.pdb
+C:\Users\CarlosJr\AppData\Local\Temporary Projects\WindowsFormsApplication11\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\CarlosJr\AppData\Local\Temporary Projects\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.Form1.resources
+C:\Users\CarlosJr\AppData\Local\Temporary Projects\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.Properties.Resources.resources
+C:\Users\CarlosJr\AppData\Local\Temporary Projects\WindowsFormsApplication11\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\CarlosJr\AppData\Local\Temporary Projects\WindowsFormsApplication11\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\CarlosJr\AppData\Local\Temporary Projects\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.exe
+C:\Users\CarlosJr\AppData\Local\Temporary Projects\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.pdb
+C:\Users\CarlosJr\documents\visual studio 2010\Projects\WindowsFormsApplication11\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.exe
+C:\Users\CarlosJr\documents\visual studio 2010\Projects\WindowsFormsApplication11\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.pdb
+C:\Users\CarlosJr\documents\visual studio 2010\Projects\WindowsFormsApplication11\WindowsFormsApplication11\bin\Release\WindowsFormsApplication11.exe
+C:\Users\CarlosJr\documents\visual studio 2010\Projects\WindowsFormsApplication11\WindowsFormsApplication11\bin\Release\WindowsFormsApplication11.pdb
+C:\Users\CarlosJr\documents\visual studio 2010\Projects\WindowsFormsApplication11\WindowsFormsApplication11\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\CarlosJr\documents\visual studio 2010\Projects\WindowsFormsApplication11\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.Form1.resources
+C:\Users\CarlosJr\documents\visual studio 2010\Projects\WindowsFormsApplication11\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.Properties.Resources.resources
+C:\Users\CarlosJr\documents\visual studio 2010\Projects\WindowsFormsApplication11\WindowsFormsApplication11\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\CarlosJr\documents\visual studio 2010\Projects\WindowsFormsApplication11\WindowsFormsApplication11\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\CarlosJr\Documents\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.exe
+C:\Users\CarlosJr\Documents\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.pdb
+C:\Users\CarlosJr\Documents\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\bin\Release\WindowsFormsApplication11.exe
+C:\Users\CarlosJr\Documents\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\bin\Release\WindowsFormsApplication11.pdb
+C:\Users\CarlosJr\Documents\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\CarlosJr\Documents\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.Form1.resources
+C:\Users\CarlosJr\Documents\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.Properties.Resources.resources
+C:\Users\CarlosJr\Documents\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\CarlosJr\Documents\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Release\GenerateResource.write.1.tlog
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\bin\Release\WindowsFormsApplication11.exe
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\bin\Release\WindowsFormsApplication11.pdb
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.csprojResolveAssemblyReference.cache
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.Form1.resources
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.Properties.Resources.resources
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.csproj.GenerateResource.cache
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.csproj.CoreCompileInputs.cache
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.exe
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Release\WindowsFormsApplication11.pdb

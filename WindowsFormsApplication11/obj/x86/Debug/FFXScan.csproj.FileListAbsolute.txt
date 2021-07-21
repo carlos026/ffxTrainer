@@ -1,0 +1,26 @@
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Debug\WindowsFormsApplication11.Form1.resources
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Debug\FFXScan.csproj.GenerateResource.cache
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Debug\FFXScan.csproj.CoreCompileInputs.cache
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\bin\Debug\FFXScan.exe.manifest
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\bin\Debug\FFXScan.application
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\bin\Debug\FFXScan.exe
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\bin\Debug\FFXScan.pdb
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Debug\FFXScan.csprojResolveAssemblyReference.cache
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Debug\FFXScan.Properties.Resources.resources
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Debug\FFXScan.exe.manifest
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Debug\FFXScan.application
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Debug\FFXScan.exe
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\x86\Debug\FFXScan.pdb
+C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\obj\x86\Debug\WindowsFormsApplication11.Form1.resources
+C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\obj\x86\Debug\FFXScan.Properties.Resources.resources
+C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\obj\x86\Debug\FFXScan.csproj.GenerateResource.cache
+C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\obj\x86\Debug\FFXScan.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\bin\Debug\FFXScan.exe.manifest
+C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\bin\Debug\FFXScan.application
+C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\bin\Debug\FFXScan.exe
+C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\bin\Debug\FFXScan.pdb
+C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\obj\x86\Debug\FFXScan.exe.manifest
+C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\obj\x86\Debug\FFXScan.application
+C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\obj\x86\Debug\FFXScan.exe
+C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\obj\x86\Debug\FFXScan.pdb
+C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\obj\x86\Debug\FFXScan.csproj.AssemblyReference.cache

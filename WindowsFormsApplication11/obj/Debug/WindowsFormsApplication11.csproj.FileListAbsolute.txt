@@ -1,0 +1,9 @@
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\bin\Debug\WindowsFormsApplication11.exe
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\bin\Debug\WindowsFormsApplication11.pdb
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\Debug\WindowsFormsApplication11.Form1.resources
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\Debug\WindowsFormsApplication11.Properties.Resources.resources
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\Debug\WindowsFormsApplication11.csproj.GenerateResource.cache
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\Debug\WindowsFormsApplication11.csproj.CoreCompileInputs.cache
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\Debug\WindowsFormsApplication11.exe
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\Debug\WindowsFormsApplication11.pdb
+F:\Backup meu pc\Documentos\Visual Studio 2010\Projects\Feiticeiro Caótico\WindowsFormsApplication11\obj\Debug\WindowsFormsApplication11.csprojResolveAssemblyReference.cache

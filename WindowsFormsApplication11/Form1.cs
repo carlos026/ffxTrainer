@@ -54,8 +54,9 @@ namespace WindowsFormsApplication11
                 uint baseAddr1 = helper.GetBaseAddress(0xD34460);
                 int[] offset = { 0x5D0 };
                 targetHp = MemoryUtils.OffsetCalculator(helper, baseAddr1, offset);
-                if (targetHp != 0)
+                if (targetHp != 1488)
                 {
+                    killEnemy1.Enabled = true;
                     hpMax1 = getEnemyHp(targetHp, 0).ToString();
                     hpMax2 = getEnemyHp(targetHp, 1).ToString();
                     hpMax3 = getEnemyHp(targetHp, 2).ToString();
@@ -93,6 +94,7 @@ namespace WindowsFormsApplication11
                 hpMaxLabel3.Text = "0";
                 hpMaxLabel4.Text = "0";
                 isInBattle = false;
+                killEnemy1.Enabled = false;
             }
         }
 
@@ -180,6 +182,15 @@ namespace WindowsFormsApplication11
                 hpBar4.Maximum = hp;
                 hpBar4.Value = hp;
             }
+        }
+
+        private void killEnemy1_Click(object sender, EventArgs e)
+        {
+            Process process = Process.GetProcessesByName("FFX")[0];
+            helper = new MemoryHelper32(process);
+            uint baseAddr1 = helper.GetBaseAddress(0xD34460);
+            int[] offset = { 0x5D0 };
+            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, baseAddr1, offset), 0);
         }
     }
 }

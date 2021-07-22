@@ -52,6 +52,7 @@
             this.hpBar4 = new System.Windows.Forms.ProgressBar();
             this.hpDescLabel4 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.killEnemy1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label4
@@ -277,11 +278,23 @@
             this.timer2.Interval = 2000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // killEnemy1
+            // 
+            this.killEnemy1.Enabled = false;
+            this.killEnemy1.Location = new System.Drawing.Point(441, 20);
+            this.killEnemy1.Name = "killEnemy1";
+            this.killEnemy1.Size = new System.Drawing.Size(75, 23);
+            this.killEnemy1.TabIndex = 55;
+            this.killEnemy1.Text = "Kill Enemy A";
+            this.killEnemy1.UseVisualStyleBackColor = true;
+            this.killEnemy1.Click += new System.EventHandler(this.killEnemy1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 227);
+            this.ClientSize = new System.Drawing.Size(579, 231);
+            this.Controls.Add(this.killEnemy1);
             this.Controls.Add(this.hpMaxLabel4);
             this.Controls.Add(this.separator4);
             this.Controls.Add(this.hpLabel4);
@@ -336,6 +349,7 @@
         private System.Windows.Forms.ProgressBar hpBar4;
         private System.Windows.Forms.Label hpDescLabel4;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button killEnemy1;
     }
 }
 

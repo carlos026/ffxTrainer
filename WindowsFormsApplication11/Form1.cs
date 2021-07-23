@@ -44,19 +44,22 @@ namespace WindowsFormsApplication11
         string hpMax2 = "0";
         string hpMax3 = "0";
         string hpMax4 = "0";
+        int[] offset = { 0x5D0 };
 
         private void searchHealth()
         {
             if (Process.GetProcessesByName("FFX").Length != 0)
             {
-                Process process = Process.GetProcessesByName("FFX")[0];
-                helper = new MemoryHelper32(process);
-                uint baseAddr1 = helper.GetBaseAddress(0xD34460);
-                int[] offset = { 0x5D0 };
-                targetHp = MemoryUtils.OffsetCalculator(helper, baseAddr1, offset);
+                uint baseAddr = getBaseAddress();
+                targetHp = MemoryUtils.OffsetCalculator(helper, baseAddr, offset);
                 if (targetHp != 1488)
                 {
                     killEnemy1.Enabled = true;
+                    killEnemy2.Enabled = true;
+                    killEnemy3.Enabled = true;
+                    killEnemy4.Enabled = true;
+                    killAll.Enabled = true;
+                    isInBattle = true;
                     hpMax1 = getEnemyHp(targetHp, 0).ToString();
                     hpMax2 = getEnemyHp(targetHp, 1).ToString();
                     hpMax3 = getEnemyHp(targetHp, 2).ToString();
@@ -95,6 +98,10 @@ namespace WindowsFormsApplication11
                 hpMaxLabel4.Text = "0";
                 isInBattle = false;
                 killEnemy1.Enabled = false;
+                killEnemy2.Enabled = false;
+                killEnemy3.Enabled = false;
+                killEnemy4.Enabled = false;
+                killAll.Enabled = false;
             }
         }
 
@@ -186,11 +193,38 @@ namespace WindowsFormsApplication11
 
         private void killEnemy1_Click(object sender, EventArgs e)
         {
+            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset), 0);
+        }
+
+        private void killEnemy2_Click(object sender, EventArgs e)
+        {
+            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset) + 3984, 0);
+        }
+
+        private void killEnemy3_Click(object sender, EventArgs e)
+        {
+            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset) + (3984 * 2), 0);
+        }
+
+        private void killEnemy4_Click(object sender, EventArgs e)
+        {
+            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset) + (3984 * 3), 0);
+        }
+
+        private uint getBaseAddress()
+        {
             Process process = Process.GetProcessesByName("FFX")[0];
             helper = new MemoryHelper32(process);
-            uint baseAddr1 = helper.GetBaseAddress(0xD34460);
-            int[] offset = { 0x5D0 };
-            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, baseAddr1, offset), 0);
+            uint baseAddr = helper.GetBaseAddress(0xD34460);
+            return baseAddr;
+        }
+
+        private void killAll_Click(object sender, EventArgs e)
+        {
+            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset), 0);
+            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset) + 3984, 0);
+            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset) + (3984 * 2), 0);
+            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset) + (3984 * 3), 0);
         }
     }
 }

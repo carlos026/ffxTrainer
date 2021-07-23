@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FFXScan.exe" size="21384">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FFXScan.exe" size="22920">
       <assemblyIdentity name="FFXScan" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>FWzWVHGImawPMmhzOLK2B7mPDp0=</dsig:DigestValue>
+        <dsig:DigestValue>+YjFRSqS63hgjwYwXEqk6rQuDbo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

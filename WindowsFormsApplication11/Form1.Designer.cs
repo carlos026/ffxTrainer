@@ -53,13 +53,17 @@
             this.hpDescLabel4 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.killEnemy1 = new System.Windows.Forms.Button();
+            this.killEnemy2 = new System.Windows.Forms.Button();
+            this.killEnemy3 = new System.Windows.Forms.Button();
+            this.killEnemy4 = new System.Windows.Forms.Button();
+            this.killAll = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(378, 202);
+            this.label4.Location = new System.Drawing.Point(50, 193);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 13);
             this.label4.TabIndex = 33;
@@ -283,17 +287,69 @@
             this.killEnemy1.Enabled = false;
             this.killEnemy1.Location = new System.Drawing.Point(441, 20);
             this.killEnemy1.Name = "killEnemy1";
-            this.killEnemy1.Size = new System.Drawing.Size(75, 23);
+            this.killEnemy1.Size = new System.Drawing.Size(113, 23);
             this.killEnemy1.TabIndex = 55;
             this.killEnemy1.Text = "Kill Enemy A";
             this.killEnemy1.UseVisualStyleBackColor = true;
             this.killEnemy1.Click += new System.EventHandler(this.killEnemy1_Click);
             // 
+            // killEnemy2
+            // 
+            this.killEnemy2.Enabled = false;
+            this.killEnemy2.Location = new System.Drawing.Point(441, 62);
+            this.killEnemy2.Name = "killEnemy2";
+            this.killEnemy2.Size = new System.Drawing.Size(113, 23);
+            this.killEnemy2.TabIndex = 56;
+            this.killEnemy2.Text = "Kill Enemy B";
+            this.killEnemy2.UseVisualStyleBackColor = true;
+            this.killEnemy2.Click += new System.EventHandler(this.killEnemy2_Click);
+            // 
+            // killEnemy3
+            // 
+            this.killEnemy3.Enabled = false;
+            this.killEnemy3.Location = new System.Drawing.Point(441, 105);
+            this.killEnemy3.Name = "killEnemy3";
+            this.killEnemy3.Size = new System.Drawing.Size(113, 23);
+            this.killEnemy3.TabIndex = 57;
+            this.killEnemy3.Text = "Kill Enemy C";
+            this.killEnemy3.UseVisualStyleBackColor = true;
+            this.killEnemy3.Click += new System.EventHandler(this.killEnemy3_Click);
+            // 
+            // killEnemy4
+            // 
+            this.killEnemy4.Enabled = false;
+            this.killEnemy4.Location = new System.Drawing.Point(441, 148);
+            this.killEnemy4.Name = "killEnemy4";
+            this.killEnemy4.Size = new System.Drawing.Size(113, 23);
+            this.killEnemy4.TabIndex = 58;
+            this.killEnemy4.Text = "Kill Enemy D";
+            this.killEnemy4.UseVisualStyleBackColor = true;
+            this.killEnemy4.Click += new System.EventHandler(this.killEnemy4_Click);
+            // 
+            // killAll
+            // 
+            this.killAll.BackColor = System.Drawing.Color.Red;
+            this.killAll.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.killAll.Enabled = false;
+            this.killAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.killAll.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.killAll.Location = new System.Drawing.Point(441, 177);
+            this.killAll.Name = "killAll";
+            this.killAll.Size = new System.Drawing.Size(113, 42);
+            this.killAll.TabIndex = 59;
+            this.killAll.Text = "Kill All";
+            this.killAll.UseVisualStyleBackColor = false;
+            this.killAll.Click += new System.EventHandler(this.killAll_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 231);
+            this.ClientSize = new System.Drawing.Size(576, 231);
+            this.Controls.Add(this.killAll);
+            this.Controls.Add(this.killEnemy4);
+            this.Controls.Add(this.killEnemy3);
+            this.Controls.Add(this.killEnemy2);
             this.Controls.Add(this.killEnemy1);
             this.Controls.Add(this.hpMaxLabel4);
             this.Controls.Add(this.separator4);
@@ -350,6 +406,10 @@
         private System.Windows.Forms.Label hpDescLabel4;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button killEnemy1;
+        private System.Windows.Forms.Button killEnemy2;
+        private System.Windows.Forms.Button killEnemy3;
+        private System.Windows.Forms.Button killEnemy4;
+        private System.Windows.Forms.Button killAll;
     }
 }
 

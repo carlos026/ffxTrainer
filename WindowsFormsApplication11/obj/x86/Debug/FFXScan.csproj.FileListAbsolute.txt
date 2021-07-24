@@ -24,3 +24,16 @@ C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\Wi
 C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\obj\x86\Debug\FFXScan.exe
 C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\obj\x86\Debug\FFXScan.pdb
 C:\Users\Carlos\OneDrive\Documentos\Visual Studio 2019\Projects\FFX Scan Hack\WindowsFormsApplication11\obj\x86\Debug\FFXScan.csproj.AssemblyReference.cache
+C:\myCode\ffxTrainer\WindowsFormsApplication11\bin\Debug\FFXScan.exe.manifest
+C:\myCode\ffxTrainer\WindowsFormsApplication11\bin\Debug\FFXScan.application
+C:\myCode\ffxTrainer\WindowsFormsApplication11\bin\Debug\FFXScan.exe
+C:\myCode\ffxTrainer\WindowsFormsApplication11\bin\Debug\FFXScan.pdb
+C:\myCode\ffxTrainer\WindowsFormsApplication11\obj\x86\Debug\FFXScan.csproj.AssemblyReference.cache
+C:\myCode\ffxTrainer\WindowsFormsApplication11\obj\x86\Debug\WindowsFormsApplication11.Form1.resources
+C:\myCode\ffxTrainer\WindowsFormsApplication11\obj\x86\Debug\FFXScan.Properties.Resources.resources
+C:\myCode\ffxTrainer\WindowsFormsApplication11\obj\x86\Debug\FFXScan.csproj.GenerateResource.cache
+C:\myCode\ffxTrainer\WindowsFormsApplication11\obj\x86\Debug\FFXScan.csproj.CoreCompileInputs.cache
+C:\myCode\ffxTrainer\WindowsFormsApplication11\obj\x86\Debug\FFXScan.exe.manifest
+C:\myCode\ffxTrainer\WindowsFormsApplication11\obj\x86\Debug\FFXScan.application
+C:\myCode\ffxTrainer\WindowsFormsApplication11\obj\x86\Debug\FFXScan.exe
+C:\myCode\ffxTrainer\WindowsFormsApplication11\obj\x86\Debug\FFXScan.pdb

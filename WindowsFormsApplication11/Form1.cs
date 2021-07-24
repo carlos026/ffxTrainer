@@ -27,16 +27,6 @@ namespace WindowsFormsApplication11
             timer2.Start();
         }
 
-        [DllImport("kernel32.dll")]
-        public static extern Int32 CloseHandle(IntPtr valor1);
-        [DllImport("kernel32.dll")]
-        public static extern Int32 WriteProcessMemory(IntPtr valor, IntPtr add, uint[] jk, UInt32 Size, IntPtr edk);
-
-        [DllImport("kernel32.dll")]
-        public static extern bool ReadProcessMemory(int hProcess,int lpBaseAddress, byte[] lpBuffer, int dwSize, ref int lpNumberOfBytesRead);
-        [DllImport("kernel32.dll")]
-        public static extern IntPtr OpenProcess(UInt32 Addres, Int32 am, UInt32 ID);
-
         MemoryHelper32 helper = null;
         Boolean isInBattle = false;
         uint targetHp = 0;
@@ -54,13 +44,16 @@ namespace WindowsFormsApplication11
                 targetHp = MemoryUtils.OffsetCalculator(helper, baseAddr, offset);
                 if (targetHp != 1488)
                 {
-                    killEnemy1.Enabled = true;
+                    if (getEnemyHp(targetHp, 0) != 0)
+                    {
+                        enemyAGroup.Visible = true;
+                        hpMax1 = getEnemyHp(targetHp, 0).ToString();
+                    }
                     killEnemy2.Enabled = true;
                     killEnemy3.Enabled = true;
                     killEnemy4.Enabled = true;
                     killAll.Enabled = true;
                     isInBattle = true;
-                    hpMax1 = getEnemyHp(targetHp, 0).ToString();
                     hpMax2 = getEnemyHp(targetHp, 1).ToString();
                     hpMax3 = getEnemyHp(targetHp, 2).ToString();
                     hpMax4 = getEnemyHp(targetHp, 3).ToString();
@@ -81,6 +74,10 @@ namespace WindowsFormsApplication11
             hpLabel2.Text = hpBit2.ToString();
             hpLabel3.Text = hpBit3.ToString();
             hpLabel4.Text = hpBit4.ToString();
+            if (Convert.ToInt32(hpMax1) < hpBit1)
+            {
+                hpMax1 = hpBit1.ToString();
+            }
             hpMaxLabel.Text = hpMax1;
             hpMaxLabel2.Text = hpMax2;
             hpMaxLabel3.Text = hpMax3;
@@ -89,6 +86,13 @@ namespace WindowsFormsApplication11
             hpBarConfig2(hpBit2, hpMax2);
             hpBarConfig3(hpBit3, hpMax3);
             hpBarConfig4(hpBit4, hpMax4);
+            if (hpBit1 <= 0)
+            {
+                enemyAGroup.Visible = false;
+            } else
+            {
+                enemyAGroup.Visible = true;
+            }
             if (hpBit1 <= 0 && hpBit2 <= 0 && hpBit3 <= 0 && hpBit4 <= 0) {
                 timer1.Stop();
                 timer2.Start();
@@ -97,7 +101,6 @@ namespace WindowsFormsApplication11
                 hpMaxLabel3.Text = "0";
                 hpMaxLabel4.Text = "0";
                 isInBattle = false;
-                killEnemy1.Enabled = false;
                 killEnemy2.Enabled = false;
                 killEnemy3.Enabled = false;
                 killEnemy4.Enabled = false;

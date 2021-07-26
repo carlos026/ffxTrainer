@@ -22,7 +22,6 @@ namespace WindowsFormsApplication11
             InitializeComponent();
             this.TransparencyKey = Color.Turquoise;
             this.BackColor = Color.Turquoise;
-            this.TopMost = true;
             this.Show();
             timer2.Start();
         }
@@ -51,6 +50,8 @@ namespace WindowsFormsApplication11
 
                     if (isInBattle)
                     {
+                        // brings app screen to front
+                        this.TopMost = true;
                         killAll.Visible = true;
                         timer1.Start();
                         timer2.Stop();
@@ -104,6 +105,9 @@ namespace WindowsFormsApplication11
                 hpMaxLabel4.Text = "0";
                 isInBattle = false;
                 killAll.Visible = false;
+                // sends app screen to back
+                this.TopMost = false;
+                this.SendToBack();
             }
         }
 

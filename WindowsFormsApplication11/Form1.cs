@@ -44,24 +44,32 @@ namespace WindowsFormsApplication11
                 targetHp = MemoryUtils.OffsetCalculator(helper, baseAddr, offset);
                 if (targetHp != 1488)
                 {
-                    if (getEnemyHp(targetHp, 0) != 0)
-                    {
-                        enemyAGroup.Visible = true;
-                        hpMax1 = getEnemyHp(targetHp, 0).ToString();
-                    }
-                    killEnemy2.Enabled = true;
-                    killEnemy3.Enabled = true;
-                    killEnemy4.Enabled = true;
-                    killAll.Enabled = true;
-                    isInBattle = true;
-                    hpMax2 = getEnemyHp(targetHp, 1).ToString();
-                    hpMax3 = getEnemyHp(targetHp, 2).ToString();
-                    hpMax4 = getEnemyHp(targetHp, 3).ToString();
+                    hpMax1 = enableEnemyHealth(enemyAGroup, 0);
+                    hpMax2 = enableEnemyHealth(enemyBGroup, 1);
+                    hpMax3 = enableEnemyHealth(enemyCGroup, 2);
+                    hpMax4 = enableEnemyHealth(enemyDGroup, 3);
 
-                    timer1.Start();
-                    timer2.Stop();
+                    if (isInBattle)
+                    {
+                        killAll.Visible = true;
+                        timer1.Start();
+                        timer2.Stop();
+                    }
                 }
             }
+        }
+
+        private string enableEnemyHealth(Panel group, uint position)
+        {
+            string hpMaxValue = "0";
+            if (getEnemyHp(targetHp, position) != 0)
+            {
+                group.Visible = true;
+                hpMaxValue = getEnemyHp(targetHp, position).ToString();
+                // only in battle if an enemy is still alive
+                isInBattle = true;
+            }
+            return hpMaxValue;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -74,25 +82,19 @@ namespace WindowsFormsApplication11
             hpLabel2.Text = hpBit2.ToString();
             hpLabel3.Text = hpBit3.ToString();
             hpLabel4.Text = hpBit4.ToString();
-            if (Convert.ToInt32(hpMax1) < hpBit1)
-            {
-                hpMax1 = hpBit1.ToString();
-            }
+            increaseMaxHpsIfHealed(hpBit1, hpBit2, hpBit3, hpBit4);
             hpMaxLabel.Text = hpMax1;
             hpMaxLabel2.Text = hpMax2;
             hpMaxLabel3.Text = hpMax3;
             hpMaxLabel4.Text = hpMax4;
-            hpBarConfig(hpBit1, hpMax1);
-            hpBarConfig2(hpBit2, hpMax2);
-            hpBarConfig3(hpBit3, hpMax3);
-            hpBarConfig4(hpBit4, hpMax4);
-            if (hpBit1 <= 0)
-            {
-                enemyAGroup.Visible = false;
-            } else
-            {
-                enemyAGroup.Visible = true;
-            }
+            hpBarConfig(hpBar, hpBit1, hpMax1);
+            hpBarConfig(hpBar2, hpBit2, hpMax2);
+            hpBarConfig(hpBar3, hpBit3, hpMax3);
+            hpBarConfig(hpBar4, hpBit4, hpMax4);
+            enemyAGroup.Visible = hpBit1 > 0;
+            enemyBGroup.Visible = hpBit2 > 0;
+            enemyCGroup.Visible = hpBit3 > 0;
+            enemyDGroup.Visible = hpBit4 > 0;
             if (hpBit1 <= 0 && hpBit2 <= 0 && hpBit3 <= 0 && hpBit4 <= 0) {
                 timer1.Stop();
                 timer2.Start();
@@ -101,10 +103,27 @@ namespace WindowsFormsApplication11
                 hpMaxLabel3.Text = "0";
                 hpMaxLabel4.Text = "0";
                 isInBattle = false;
-                killEnemy2.Enabled = false;
-                killEnemy3.Enabled = false;
-                killEnemy4.Enabled = false;
-                killAll.Enabled = false;
+                killAll.Visible = false;
+            }
+        }
+
+        private void increaseMaxHpsIfHealed(int currentHp1, int currentHp2, int currentHp3, int currentHp4)
+        {
+            if(Convert.ToInt32(hpMax1) < currentHp1)
+            {
+                hpMax1 = currentHp1.ToString();
+            }
+            if (Convert.ToInt32(hpMax2) < currentHp2)
+            {
+                hpMax2 = currentHp2.ToString();
+            }
+            if (Convert.ToInt32(hpMax3) < currentHp3)
+            {
+                hpMax3 = currentHp3.ToString();
+            }
+            if (Convert.ToInt32(hpMax4) < currentHp4)
+            {
+                hpMax4 = currentHp4.ToString();
             }
         }
 
@@ -114,18 +133,18 @@ namespace WindowsFormsApplication11
             return BitConverter.ToInt32(HpInBytes, 0);
         }
 
-        private void hpBarConfig(int hp, string hpMax)
+        private void hpBarConfig(ProgressBar healthBar, int hp, string hpMax)
         {
-            hpBar.Maximum = Convert.ToInt32(hpMax);
-            hpBar.Minimum = 0;
+            healthBar.Maximum = Convert.ToInt32(hpMax);
+            healthBar.Minimum = 0;
             if (hp > 0 && hp <= Convert.ToInt32(hpMax)) {
-                hpBar.Value = hp;
+                healthBar.Value = hp;
             } else {
-                hpBar.Value = 0;
+                healthBar.Value = 0;
             }
             if(hp > Convert.ToInt32(hpMax)) {
-                hpBar.Maximum = hp;
-                hpBar.Value = hp;
+                healthBar.Maximum = hp;
+                healthBar.Value = hp;
             }
         }
 
@@ -137,81 +156,30 @@ namespace WindowsFormsApplication11
             }
         }
 
-        private void hpBarConfig2(int hp, string hpMax)
+        private void killEnemy(uint position)
         {
-            hpBar2.Maximum = Convert.ToInt32(hpMax);
-            hpBar2.Minimum = 0;
-            if (hp > 0 && hp <= Convert.ToInt32(hpMax))
-            {
-                hpBar2.Value = hp;
-            }
-            else
-            {
-                hpBar2.Value = 0;
-            }
-            if (hp > Convert.ToInt32(hpMax))
-            {
-                hpBar2.Maximum = hp;
-                hpBar2.Value = hp;
-            }
-        }
-
-        private void hpBarConfig3(int hp, string hpMax)
-        {
-            hpBar3.Maximum = Convert.ToInt32(hpMax);
-            hpBar3.Minimum = 0;
-            if (hp > 0 && hp <= Convert.ToInt32(hpMax))
-            {
-                hpBar3.Value = hp;
-            }
-            else
-            {
-                hpBar3.Value = 0;
-            }
-            if (hp > Convert.ToInt32(hpMax))
-            {
-                hpBar3.Maximum = hp;
-                hpBar3.Value = hp;
-            }
-        }
-
-        private void hpBarConfig4(int hp, string hpMax)
-        {
-            hpBar4.Maximum = Convert.ToInt32(hpMax);
-            hpBar4.Minimum = 0;
-            if (hp > 0 && hp <= Convert.ToInt32(hpMax))
-            {
-                hpBar4.Value = hp;
-            }
-            else
-            {
-                hpBar4.Value = 0;
-            }
-            if (hp > Convert.ToInt32(hpMax))
-            {
-                hpBar4.Maximum = hp;
-                hpBar4.Value = hp;
-            }
+            uint targetMemPosition = MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset) + (3984 * position);
+            helper.WriteMemory(targetMemPosition, 0);
         }
 
         private void killEnemy1_Click(object sender, EventArgs e)
         {
-            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset), 0);
+            killEnemy(0);
         }
 
         private void killEnemy2_Click(object sender, EventArgs e)
         {
-            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset) + 3984, 0);
+            killEnemy(1);
         }
 
         private void killEnemy3_Click(object sender, EventArgs e)
         {
-            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset) + (3984 * 2), 0);
+            killEnemy(2);
         }
 
         private void killEnemy4_Click(object sender, EventArgs e)
         {
-            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset) + (3984 * 3), 0);
+            killEnemy(3);
         }
 
         private uint getBaseAddress()
@@ -224,10 +192,10 @@ namespace WindowsFormsApplication11
 
         private void killAll_Click(object sender, EventArgs e)
         {
-            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset), 0);
-            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset) + 3984, 0);
-            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset) + (3984 * 2), 0);
-            helper.WriteMemory(MemoryUtils.OffsetCalculator(helper, getBaseAddress(), offset) + (3984 * 3), 0);
+            for (uint i = 0; i < 4; i++)
+            {
+                killEnemy(i);
+            }
         }
     }
 }
